@@ -1,0 +1,33 @@
+{
+  "name": "myDars",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "supabase": "^2.119.0",
+    "turbo": "^2.11.6",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "11.16.0"
+    }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "jose": "^6.2.12"
+  }
+}
